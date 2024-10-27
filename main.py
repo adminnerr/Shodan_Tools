@@ -4,11 +4,11 @@ import shodan
 import threading
 
 # Shodan API Key
-API_KEY = "AmnP4zrAoawggLagxymD3sexTUYyOKUy"
+API_KEY = "your-shodan-key"
 api = shodan.Shodan(API_KEY)
 
 
-# 批量检测功能（多线程处理，并在完成后弹窗提示）
+
 def batch_scan():
     file_path = filedialog.askopenfilename(title="选择要批量检测的txt文件", filetypes=[("Text Files", "*.txt")])
 
@@ -29,7 +29,7 @@ def batch_scan():
             print("Host data:", host)
 
             if has_vuln:
-                # 获取 CVE 名称，如果有漏洞
+               
                 if isinstance(host.get("vulns"), dict):
                     vulns = ", ".join(host["vulns"].keys())
                 else:
@@ -67,7 +67,7 @@ def batch_scan():
 
 
 
-# 查询单个IP信息功能（多线程处理）
+# 单个IP信息功能（多线程处理）
 def check_single_ip(ip, output_box):
     def scan_ip():
         try:
