@@ -232,8 +232,3 @@ text_box.grid(row=1, column=0, columnspan=3, padx=10, pady=10)
 
 window.mainloop()
 
-'''
-1.先用 shodan search --limit 100 country:jp    找资产IP
-2.   用这个工具找，那个IP有漏洞
-3.找poc试试
-'''
