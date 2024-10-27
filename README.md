@@ -1,5 +1,7 @@
 # Shodan_Tools
 
+用python对shodan的开发
+
 准备：
 1.首先需要一个shodan的学术会员
 2.pycharm
